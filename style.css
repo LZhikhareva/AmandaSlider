@@ -13,18 +13,16 @@ body {
 }
 
 .screen {
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* padding-top: 25%;
-  padding-bottom: 10%; */
   height: 100vh;
   width: 100vw;
   transition: margin 0.5s ease-out;
   background: rgba(0, 0, 0, 0.8);
-  /* background: black; */
 }
 
 .screen.up {
@@ -93,13 +91,6 @@ bottom: 15%;
   opacity: 1;
 }
 
-/* .screen img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-} */
-
 .controlls {
   position: absolute;
 }
@@ -112,4 +103,34 @@ bottom: 15%;
 .screen .next {
   top: 50%;
   right: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 967px)  {
+  .header {
+    font-size: 50px;
+  }
+
+  .header-img {
+    object-position: center 0;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .header-img {
+    object-position: center 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    font-size: 25px;
+  }
+
+  .header-img {
+    object-position: center 0;
+  }
 }
